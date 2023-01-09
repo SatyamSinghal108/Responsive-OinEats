@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body{
+    background-color: #f5f5f5;
+}
+
+/* navbar css */
+
+#navbar .example-spacer {
+    flex: 1 1 auto;
+  }
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background: black;
+    opacity: 0.5;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    margin: -4px 4px;
+}
+
+#logo img{
+    margin: 10px 10px;
+    height: 40px;
+    width: 60px;
+    /* filter: contrast(10); */
+}
+
+#navbar ul{
+    display: flex;
+    margin-top: -6px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul .item a:hover{
+  color: black;
+  background-color: white;
+}
+#navbar ul .item a{
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+#navbar #links{
+    margin-left:6px;
+}
+
+#navbar #links .item {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+#navbar #btns{
+    margin-right:14px;
+    margin-top: 3px;
+}
+
+#navbar #btns li button {
+    text-decoration: none;
+    padding: 6px 10px;
+    display: block;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar #btns li button:hover{
+    background-color: rgb(175, 9, 9);
+    color: white;
+}
+
+/* home section */
+
+#homes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px;
+    height: 480px;
+    top: 0;
+    left: 0;
+   margin-top: -100px;
+}
+
+#homes::before{
+    content: "";
+    background:url('/assets/food3.jpg') no-repeat center center/cover;
+    height: 480px;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.89;
+    position:absolute;
+    border-bottom: 2px solid black;
+   
+}
+
+#homes h1{
+    color: white;
+    text-align: center;
+    font-family: 'Seymour One', sans-serif;
+}
+
+#homes p{
+    color: #f5f5f5;
+    /* line-height: 10px; */
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#homes .btn{
+    padding: 08px 40px;
+    margin: 15px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: rgb(207, 153, 5);
+}
+
+#homes .btn:hover{
+    background-color:   rgb(255, 187, 0);
+}
+
+
+
+/* services */
+
+.service-container{
+    margin-top:30px ;
+}
+
+#services{
+display: flex;
+margin:34px 34px;
+justify-content: center;
+}
+
+#services .box{
+    border: none ;
+    box-shadow: 2px 4px 4px gray;
+    padding: 34px;
+    margin: 5px 8px;
+    width: 280px;
+    background-color: white;
+    border-radius: 23px;
+}
+
+#services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* partners */
+
+.partners-container{
+    height: 400px;
+    position: relative;
+    /* padding-top: 20px; */
+    margin-top: 30px;
+}
+
+.partners-container::before{
+    content: "";
+    background: url("/assets/food2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+    position: absolute;
+
+}
+
+#partners .partner-item img{
+    height: 120px;
+    
+
+}
+
+#partners .partner-item{
+    padding: 35px;
+    filter: saturate(10);
+}
+
+#partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-container .h{
+    
+    margin-top: 40px;
+}
+
+/* delievery Partners */
+
+
+.dilevery-partners{
+    height: 500px;
+
+    /* padding-top: 40px;*/
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* .dilevery-partner::before{
+    content: "";
+    background: url("/assets/food2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.4;
+    position: absolute;
+
+} */
+
+#partners .partner-item-d img{
+    height: 320px;
+}
+
+#partners .partner-item-d{
+    padding: 35px;
+    filter: saturate(1);
+}
+
+/* contacts-section */
+
+.contact{
+    position: relative;
+    height: 600px;
+}
+
+.contact::before{
+content: "";
+opacity: 0.8;
+background: url('/assets/food1.jpg') no-repeat center center/cover;
+height: 600px;
+width: 100%;
+z-index: -1;
+position: absolute;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.contact h1{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    
+}
+
+#contact-box form{
+    width:40%
+}
+
+#contact-box form label{
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Seymour One', sans-serif;
+
+}
+
+#contact-box form .form-group{
+    margin-top:10px ;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 9px;
+    /* margin-top:10px ; */
+}
+
+#contact-box button{
+    width: 104%;
+    color: white;
+    padding: 0.5rem;
+    margin-top:10px ;
+    font-size: 1.0rem;
+    border: none;
+    border-radius: 9px;
+    background-color: rgb(51, 51, 51);
+    justify-content: center;
+}
+
+#contact-box button:hover{
+    background-color: black;
+}
+/* footer */
+
+#foot{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    padding: 30px 20px;
+    
+}
+
+#foot .c{
+    line-height: 10px;
+}
+
+/* utility class */
+
+.head-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h-secondary{
+    font-size: 1.6rem;
+    padding: 12px;
+    font-family: 'Seymour One', sans-serif;
+
+}
+
+.center{
+    text-align: center;
+    
+}
